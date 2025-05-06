@@ -1,0 +1,17 @@
+{
+    "Pune":{
+        "temperature":"40",
+        "humidity":"4",
+        "conditions":"Sunny"
+    },
+    "Mumbai":{
+        "temperature":"30",
+        "humidity":"5",
+        "conditions":"Humid"
+    },
+    "Delhi":{
+        "temperature":"43",
+        "humidity":"6",
+        "conditions":"Cloudy"
+    }
+}
