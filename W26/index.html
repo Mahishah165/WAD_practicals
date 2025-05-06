@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PICT's Course Structure</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- <link rel="stylesheet" href="jquery.mobile.css">
+<script src="jquery.js"></script>
+<script src="jquery.mobile.js"></script> -->
+    <style>
+        .ui-header {
+            background: #1976D2 !important;
+            border: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .ui-footer{
+            background-color: blueviolet !important;
+        }
+        .ui-content {
+            padding: 20px;
+            background: #eb8181;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+        .ui-header h1 {
+            color: #fdfbfb;
+            font-size: 1.5em;
+            margin: 0;
+            padding: 0.5em;
+        }
+  
+        .ui-collapsible-heading {
+            background: #c47575 !important; /* Changed to red for FE, SE, TE, BE */
+            border-radius: 8px 8px 0 0;
+            color: #ffffff !important;
+        }
+        .ui-collapsible-heading a {
+            color: #ffffff !important;
+            font-size: 1.2em;
+        }
+        .ui-collapsible-heading.outer-collapsible {
+            background: #2196F3 !important; /* Keep original blue for outer collapsible */
+        }
+        .ui-listview > li {
+            background: #f5f3f3 !important;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            margin-bottom: 8px;
+            padding: 10px;
+            line-height: 1.6;
+        }
+        .ui-listview > li:hover {
+            background: #e3f2fd;
+        }
+        .ui-footer {
+            background: #1976D2 !important;
+            border: none;
+            padding: 0.5em;
+            text-align: center;
+        }
+        .ui-footer h4 {
+            color: #ffffff;
+            margin: 0;
+            font-size: 1em;
+        }
+        @media (max-width: 600px) {
+            .ui-content {
+                padding: 15px;
+                margin: 5px;
+            }
+            .ui-header h1 {
+                font-size: 1.2em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            .ui-collapsible-heading a {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div data-role ='page' id="course-structure" >
+        <div data-role="header" data-theme="b">
+            <h1>PICT B.E. Course Structure</h1>
+        </div>
+        <div data-role="content">
+            <div data-role="collapsible" data-theme="a">
+                <h2 class="outer-collapsible">BE Computer Engineering</h2>
+                <div data-role="collapsible" data-theme="b" data-content-theme="a">
+                    <h3>First Year (FE)</h3>
+                    <ul data-role="listview" data-inset="true">
+                        <li><strong>Engineering Mathematics I</strong>: Calculus and differential equations.</li>
+                        <li><strong>Physics</strong>: Mechanics and optics fundamentals.</li>
+                        <li><strong>Chemistry</strong>: Material science and chemical properties.</li>
+                        <li><strong>Basic Electrical Engineering</strong>: Circuits and electrical systems.</li>
+                        <li><strong>Programming in C</strong>: Introduction to programming.</li>
+                    </ul>
+                </div>
+                <div data-role="collapsible" data-theme="b" data-content-theme="a">
+                    <h3>Second Year (SE)</h3>
+                    <ul data-role="listview" data-inset="true">
+                        <li><strong>Data Structures</strong>: Arrays, lists, and trees.</li>
+                        <li><strong>Discrete Mathematics</strong>: Logic and set theory.</li>
+                        <li><strong>Digital Electronics</strong>: Logic gates and circuits.</li>
+                        <li><strong>Object-Oriented Programming</strong>: Java and C++ concepts.</li>
+                        <li><strong>Computer Organization</strong>: CPU and memory architecture.</li>
+                    </ul>
+                </div>
+                <div data-role="collapsible" data-theme="b" data-content-theme="a">
+                    <h3>Third Year (TE)</h3>
+                    <ul data-role="listview" data-inset="true">
+                        <li><strong>Database Management Systems</strong>: SQL and database design.</li>
+                        <li><strong>Operating Systems</strong>: Process and memory management.</li>
+                        <li><strong>Software Engineering</strong>: SDLC and agile methodologies.</li>
+                        <li><strong>Computer Networks</strong>: TCP/IP and networking protocols.</li>
+                        <li><strong>Microprocessors</strong>: Architecture and interfacing.</li>
+                    </ul>
+                </div>
+                <div data-role="collapsible" data-theme="b" data-content-theme="a">
+                    <h3>Final Year (BE)</h3>
+                    <ul data-role="listview" data-inset="true">
+                        <li><strong>Machine Learning</strong>: Algorithms and data modeling.</li>
+                        <li><strong>Cloud Computing</strong>: AWS and virtualization.</li>
+                        <li><strong>Information Security</strong>: Cryptography and cybersecurity.</li>
+                        <li><strong>Project Work</strong>: Capstone project implementation.</li>
+                        <li><strong>Elective (e.g., AI)</strong>: Advanced topics in AI.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+        <div data-role="footer" data-theme="b" data-position="fixed">
+            <h4>&copy; 2025 PICT</h4>
+        </div>
+    </div>
+</body>
+</html>

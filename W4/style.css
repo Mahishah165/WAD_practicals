@@ -1,0 +1,91 @@
+header{
+    background-color: #0288d1;
+    color: black;
+    padding: 2em;
+    text-align: center;
+}
+footer{
+    background-color: #0288d1;
+    color: black;
+    padding: 1em;
+    text-align: center;
+}
+section{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 1em;
+    padding: 2em;
+}
+h2{
+    color:brown;
+}
+.course-category{
+    margin: 1em 0;
+}
+.course-category h3{
+    border-bottom: 2px solid #0288d1;
+    padding-bottom: 0.5em;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin:1em 0;
+}
+th,td{
+    padding: 0.8em;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th{
+    background-color: #0288d1;
+            color: white;
+}
+tr:hover{
+    background-color: aquamarine;
+}
+.benefits, .offers {
+    margin: 0.5em 0;
+}
+
+@media (max-width:600px){
+    table,th,td{
+        display: block;
+        width: 100%;
+    }
+    th{
+        display:none;
+    }
+    td {
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+    }
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        padding-right: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+    section {
+        margin: 0.5em;
+        padding: 1em;
+    }
+    header {
+        padding: 1em; /* Reduced padding for smaller screens */
+    }
+    header h1 {
+        font-size: 1.5em; /* Reduced font size for the h1 */
+    }
+    header p {
+        font-size: 0.9em; /* Reduced font size for the p */
+    }
+    footer {
+        padding: 0.5em; /* Reduced padding for smaller screens */
+    }
+    footer p {
+        font-size: 0.8em; /* Reduced font size for the p */
+    }
+}

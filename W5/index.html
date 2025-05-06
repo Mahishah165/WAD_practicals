@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Listing</title>
+    <!-- Bootstrap 5 CSS -->
+     <!-- css/bootstrap.min.css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for minor adjustments -->
+    <style>
+        .filter-section { padding: 20px 0; }
+        .product-card { transition: transform 0.2s; }
+        .product-card:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body>
+    <div class="container my-4">
+        <!-- Header Section -->
+        <h1 class="mb-3">Mugs</h1>
+        <p class="text-muted mb-4">Mugs and glassware are great for gifting to friends, loved ones, or even as special occasions. Choose from many lovely colors, styles, and more.</p>
+
+        <div class="row">
+            <!-- Filter Sidebar -->
+            <div class="col-lg-3 col-md-4 col-sm-12 filter-section">
+                <h5>Target Market</h5>
+                <div class="dropdown mb-3">
+                    <button class="btn btn-outline-secondary dropdown-toggle w-100 text-start" type="button" id="targetMarketDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Select Market
+                    </button>
+                    <ul class="dropdown-menu w-100" aria-labelledby="targetMarketDropdown">
+                        <li><a class="dropdown-item"><input type="checkbox" class="me-2">USA</a></li>
+                        <li><a class="dropdown-item"><input type="checkbox" class="me-2">Canada</a></li>
+                        <li><a class="dropdown-item"><input type="checkbox" class="me-2">United Kingdom</a></li>
+                        <li><a class="dropdown-item"><input type="checkbox" class="me-2">Europe</a></li>
+                        <li><a class="dropdown-item"><input type="checkbox" class="me-2">Australia</a></li>
+                        <li><a class="dropdown-item"><input type="checkbox" class="me-2">China</a></li>
+                        <li><a class="dropdown-item"><input type="checkbox" class="me-2">NZ</a></li>
+                    </ul>
+                </div>
+
+                <h5>Port of Origin</h5>
+                <div class="dropdown mb-3">
+                    <button class="btn btn-outline-secondary dropdown-toggle w-100 text-start" type="button" id="portOriginDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Select Port
+                    </button>
+                    <ul class="dropdown-menu w-100" aria-labelledby="portOriginDropdown">
+                        <li><a class="dropdown-item"><input type="checkbox" class="me-2">All ports</a></li>
+                        <li><a class="dropdown-item"><input type="checkbox" class="me-2">Port order</a></li>
+                    </ul>
+                </div>
+
+                <h5>Waterproof Exterior</h5>
+                <div class="dropdown mb-3">
+                    <button class="btn btn-outline-secondary dropdown-toggle w-100 text-start" type="button" id="waterproofDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Select Option
+                    </button>
+                    <ul class="dropdown-menu w-100" aria-labelledby="waterproofDropdown">
+                        <li><a class="dropdown-item"><input type="checkbox" class="me-2">Artiside</a></li>
+                        <li><a class="dropdown-item"><input type="checkbox" class="me-2">Colony</a></li>
+                        <li><a class="dropdown-item"><input type="checkbox" class="me-2">Dictron</a></li>
+                        <li><a class="dropdown-item"><input type="checkbox" class="me-2">Duplum</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Product Listing -->
+            <div class="col-lg-9 col-md-8 col-sm-12">
+                <!-- Sort Option -->
+                <div class="d-flex justify-content-end mb-3">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="sortDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sort by: POPULARITY
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="sortDropdown">
+                            <li><a class="dropdown-item" href="#">Popularity</a></li>
+                            <li><a class="dropdown-item" href="#">Price: Low to High</a></li>
+                            <li><a class="dropdown-item" href="#">Price: High to Low</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                    <!-- Product Card 1 -->
+                    <div class="col">
+                        <div class="card product-card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Ceramic Mug">
+                            <div class="card-body">
+                                <h5 class="card-title">Ceramic Mug 11oz</h5>
+                                <p class="card-text">By Ceramic Mug LLC</p>
+                                <p class="card-text text-success">From USD $10.42 + Free Shipping</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="col">
+                        <div class="card product-card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Acrylic Coffee Mug">
+                            <div class="card-body">
+                                <h5 class="card-title">Acrylic Coffee Mug</h5>
+                                <p class="card-text">By Acrylic Mugs Inc</p>
+                                <p class="card-text text-success">From USD $15.52 + Free Shipping</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="col">
+                        <div class="card product-card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Ceramic Mug 15oz">
+                            <div class="card-body">
+                                <h5 class="card-title">Ceramic Mug 15oz</h5>
+                                <p class="card-text">By Ceramic Mug LLC</p>
+                                <p class="card-text text-success">From USD $16.62 + Free Shipping</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="col">
+                        <div class="card product-card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="White Ceramic Mug">
+                            <div class="card-body">
+                                <h5 class="card-title">White Ceramic Mug</h5>
+                                <p class="card-text">By Ceramic Experts</p>
+                                <p class="card-text text-success">From USD $12.88 + Free Shipping</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 5 -->
+                    <div class="col">
+                        <div class="card product-card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Mug 11oz">
+                            <div class="card-body">
+                                <h5 class="card-title">Mug 11oz</h5>
+                                <p class="card-text">By Mug Makers</p>
+                                <p class="card-text text-success">From USD $9.44 + Free Shipping</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

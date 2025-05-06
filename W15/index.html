@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    ol {
+      list-style: decimal;
+      padding-left: 20px;
+    }
+    li.product {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .product img{
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-right: 20px;
+      border-radius: 4px;
+    }
+    .details{
+        flex-grow:1;
+    }
+    .details h4{
+        margin: 0 0 10px;
+    }
+    .detail p{
+        margin: 0;
+        font-weight: bold;
+        color: #2a9d8f;
+    }
+    </style>
+</head>
+<body>
+    <h2>Products Catalog</h2>
+    <ol id="products"></ol>
+    <script>
+        fetch('http://localhost:3000/api/products')
+        .then(res => res.json())
+        .then(data=>{
+            const list = document.getElementById('products');
+            data.forEach(product=>{
+                const li = document.createElement('li');
+                li.className = 'product';
+                li.innerHTML = `
+                <img src= "${product.image}" alt="${product.name}">
+                <div class= "details">
+                    <h4>${product.name}</h4>
+                    <p>${product.price}</p>
+                </div>
+                `;
+                list.appendChild(li);
+            });
+        })
+        .catch(error=>{
+            console.error('Error in loading products');
+        });
+    </script>
+</body>
+</html>

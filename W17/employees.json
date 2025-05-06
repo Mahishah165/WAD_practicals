@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "designation": "Software Engineer",
+      "department": "Development",
+      "salary": 75000,
+      "image": "https://via.placeholder.com/100"
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "designation": "UI/UX Designer",
+      "department": "Design",
+      "salary": 68000,
+      "image": "https://via.placeholder.com/100"
+    }
+  ]
+  

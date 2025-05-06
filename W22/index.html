@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune Institute of Computer Technology</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        .ui-header .ui-title {
+            font-size: 1.2em;
+            margin: 0.6em 0;
+        }
+        .ui-content {
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home" data-theme="b">
+    <div data-role="header">
+        <h1>PICT</h1>
+    </div>
+    <div data-role="content">
+        <h2>Welcome to Pune Institute of Computer Technology</h2>
+        <p>Explore our academic offerings and connect with us!</p>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#about" data-transition="slide">About Us</a></li>
+                <li><a href="#courses" data-transition="slide">Courses</a></li>
+                <li><a href="#departments" data-transition="slide">Departments</a></li>
+                <li><a href="#contact" data-transition="slide">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- About Us Page -->
+<div data-role="page" id="about" data-theme="b">
+    <div data-role="header">
+        <a href="#home" class="ui-btn ui-btn-left ui-icon-back ui-btn-icon-left">Back</a>
+        <h1>About Us</h1>
+    </div>
+    <div data-role="content">
+        <h3>About PICT</h3>
+        <div data-role="collapsible" data-collapsed="true">
+            <h4>Our History</h4>
+            <p>Founded in 1983, Pune Institute of Computer Technology (PICT) is a premier engineering college affiliated with Savitribai Phule Pune University, known for excellence in technical education.</p>
+        </div>
+        <div data-role="collapsible" data-collapsed="true">
+            <h4>Our Mission</h4>
+            <p>To provide quality education in engineering and technology, fostering innovation and research.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Courses Offered Page -->
+<div data-role="page" id="courses" data-theme="b">
+    <div data-role="header">
+        <a href="#home" class="ui-btn ui-btn-left ui-icon-back ui-btn-icon-left">Back</a>
+        <h1>Courses Offered</h1>
+    </div>
+    <div data-role="content">
+        <h3>Academic Programs</h3>
+        <div data-role="collapsible-set">
+            <div data-role="collapsible">
+                <h4>Undergraduate Programs</h4>
+                <ul data-role="listview">
+                    <li>B.E. in Computer Engineering</li>
+                    <li>B.E. in Electronics & Telecommunication</li>
+                    <li>B.E. in Information Technology</li>
+                </ul>
+            </div>
+            <div data-role="collapsible">
+                <h4>Postgraduate Programs</h4>
+                <ul data-role="listview">
+                    <li>M.E. in Computer Engineering</li>
+                    <li>M.E. in Electronics & Telecommunication</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Departments Page -->
+<div data-role="page" id="departments" data-theme="b">
+    <div data-role="header">
+        <a href="#home" class="ui-btn ui-btn-left ui-icon-back ui-btn-icon-left">Back</a>
+        <h1>Departments</h1>
+    </div>
+    <div data-role="content">
+        <h3>Our Departments</h3>
+        <div data-role="collapsible-set">
+            <div data-role="collapsible">
+                <h4>Computer Engineering</h4>
+                <p>Focuses on software development, AI, and data science.</p>
+            </div>
+            <div data-role="collapsible">
+                <h4>Electronics & Telecommunication</h4>
+                <p>Specializes in communication systems and embedded technologies.</p>
+            </div>
+            <div data-role="collapsible">
+                <h4>Information Technology</h4>
+                <p>Emphasizes IT infrastructure and cybersecurity.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Information Page -->
+<div data-role="page" id="contact" data-theme="b">
+    <div data-role="header">
+        <a href="#home" class="ui-btn ui-btn-left ui-icon-back ui-btn-icon-left">Back</a>
+        <h1>Contact Us</h1>
+    </div>
+    <div data-role="content">
+        <h3>Contact Information</h3>
+        <div data-role="collapsible" data-collapsed="true">
+            <h4>Address</h4>
+            <p>Pune Institute of Computer Technology,<br>Survey No. 27, Dhankawadi,<br>Pune, Maharashtra 411043, India</p>
+        </div>
+        <div data-role="collapsible" data-collapsed="true">
+            <h4>Phone</h4>
+            <p>+91-20-24371101</p>
+        </div>
+        <div data-role="collapsible" data-collapsed="true">
+            <h4>Email</h4>
+            <p>info@pict.edu</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

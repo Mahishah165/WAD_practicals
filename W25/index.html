@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jQuery Mobile CSS & JS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <!-- Custom CSS -->
+  <style>
+    .header {
+      background: #0077cc;
+      color: white;
+      text-align: center;
+    }
+
+    .content {
+      padding: 15px;
+    }
+
+    .project-img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      background: #f1f1f1;
+    }
+
+    h1, h2, h3 {
+      color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+
+<!-- About Me Page -->
+<div data-role="page" id="about">
+  <div data-role="header" class="header">
+    <h1>About Me</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#about" class="ui-btn-active">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="content">
+    <p>Hello! I'm a passionate developer eager to build modern and responsive web apps. I enjoy working with web technologies, solving problems, and learning new skills!</p>
+  </div>
+
+  <div class="footer">© 2025 My Portfolio</div>
+</div>
+
+<!-- Projects Page -->
+<div data-role="page" id="projects">
+  <div data-role="header" class="header">
+    <h1>Projects</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects" class="ui-btn-active">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="content">
+    <div data-role="collapsible-set">
+
+      <div data-role="collapsible">
+        <h3>Portfolio Website</h3>
+        <img src="https://via.placeholder.com/300x200" alt="Portfolio Website" class="project-img" />
+        <p>A responsive portfolio website built using HTML, CSS, and JavaScript.</p>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>Task Manager App</h3>
+        <img src="https://via.placeholder.com/300x200" alt="Task Manager" class="project-img" />
+        <p>A task management tool with reminders and scheduling built using React.</p>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>Weather App</h3>
+        <img src="https://via.placeholder.com/300x200" alt="Weather App" class="project-img" />
+        <p>Weather forecast app using OpenWeatherMap API and jQuery.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">© 2025 My Portfolio</div>
+</div>
+
+<!-- Skills Page -->
+<div data-role="page" id="skills">
+  <div data-role="header" class="header">
+    <h1>Skills</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills" class="ui-btn-active">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="content">
+    <ul data-role="listview" data-inset="true">
+      <li>HTML5 / CSS3</li>
+      <li>JavaScript / jQuery</li>
+      <li>React / Node.js</li>
+      <li>Python / Flask</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </div>
+
+  <div class="footer">© 2025 My Portfolio</div>
+</div>
+
+<!-- Contact Page -->
+<div data-role="page" id="contact">
+  <div data-role="header" class="header">
+    <h1>Contact Info</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="ui-btn-active">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="content">
+    <p><strong>Email:</strong> you@example.com</p>
+    <p><strong>Phone:</strong> +123 456 7890</p>
+    <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/yourname</a></p>
+    <p><strong>GitHub:</strong> <a href="#">github.com/yourusername</a></p>
+  </div>
+
+  <div class="footer">© 2025 My Portfolio</div>
+</div>
+
+</body>
+</html>

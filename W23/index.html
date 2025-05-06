@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PICT Student Clubs</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .ui-header {
+            background-color: aqua !important;
+            font-size: 2em;
+            color: black;
+            border-color: aquamarine;
+        }
+        .ui-footer {
+            background-color: aqua !important;
+            color: black;
+            border-color: aquamarine;
+        }
+        .ui-collapsible-heading {
+            background-color: #2196F3 !important;
+            color: white !important;
+        }
+        .ui-collapsible-heading-toggle.ui-btn {
+            background-color: #2196F3 !important;
+            color: white !important;
+        }
+        .ui-collapsible-content {
+            background-color: #fff;
+            padding: 15px;
+        }
+        .collapsible-with-image {
+            display: flex;
+            align-items: center;
+        }
+        .club-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+        .club-text {
+            flex: 1;
+        }
+        .ui-page {
+            background-color: #f4f4f4;
+        }
+        @media (max-width: 600px) {
+            .collapsible-with-image {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .club-image {
+                margin-right: 0;
+                margin-bottom: 10px;
+                width: 80px;
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div data-role="page" id="clubs">
+        <div data-role="header">
+            <h1>PICT Student Clubs</h1>
+        </div>
+        <div data-role="content">
+            <h2>Extracurricular Activities</h2>
+            <div data-role="collapsible">
+                <h3>Coding Club</h3>
+                <div class="collapsible-with-image">
+                    <img src="https://picsum.photos/200/200?random=2" alt="Coding Club" class="club-image">
+                    <div class="club-text">
+                        <p><strong>Description</strong>: Focuses on competitive programming and hackathons.</p>
+                        <p><strong>Achievements</strong>: Won Smart India Hackathon 2024; Top ranks in CodeChef.</p>
+                    </div>
+                </div>
+            </div>
+            <div data-role="collapsible">
+                <h3>Robotics Club</h3>
+                <div class="collapsible-with-image">
+                    <img src="https://picsum.photos/200/200?random=3" alt="Robotics Club" class="club-image">
+                    <div class="club-text">
+                        <p><strong>Description</strong>: Designs robots for national competitions like Robocon.</p>
+                        <p><strong>Achievements</strong>: Finalist in ABU Robocon 2023; Best Design Award.</p>
+                    </div>
+                </div>
+            </div>
+            <div data-role="collapsible">
+                <h3>Dance Club</h3>
+                <div class="collapsible-with-image">
+                    <img src="https://picsum.photos/200/200?random=4" alt="Dance Club" class="club-image">
+                    <div class="club-text">
+                        <p><strong>Description</strong>: Promotes various dance forms through performances.</p>
+                        <p><strong>Achievements</strong>: First place in Inter-College Dance Fest 2024.</p>
+                    </div>
+                </div>
+            </div>
+            <div data-role="collapsible">
+                <h3>PICTOREAL</h3>
+                <div class="collapsible-with-image">
+                    <img src="https://picsum.photos/200/200?random=5" alt="PICTOREAL" class="club-image">
+                    <div class="club-text">
+                        <p><strong>Description</strong>: Non-technical club publishing vibrant magazines.</p>
+                        <p><strong>Achievements</strong>: Published 24 magazines; Best Campus Magazine Award.</p>
+                    </div>
+                </div>
+            </div>
+            <div data-role="collapsible">
+                <h3>TEDxPICT</h3>
+                <div class="collapsible-with-image">
+                    <img src="https://picsum.photos/200/200?random=1" alt="TEDxPICT" class="club-image">
+                    <div class="club-text">
+                        <p><strong>Description</strong>: Platform for sharing ideas and innovations.</p>
+                        <p><strong>Achievements</strong>: Hosted TEDxPICT 2024 with 500+ attendees.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>© 2025 PICT</h4>
+        </div>
+    </div>
+</body>
+</html>

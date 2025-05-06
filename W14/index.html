@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Directory</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 1em;
+    }
+    .user {
+      background-color: #d0f0f0;
+      text-align: center;
+      padding: 1em;
+      margin: 10px auto;
+      border-radius: 10px;
+      width: 60%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    #searchBox {
+      margin-bottom: 1em;
+      text-align: center;
+    }
+    input[type="number"] {
+      padding: 0.5em;
+      font-size: 1em;
+      width: 100px;
+    }
+    button {
+      padding: 0.5em 1em;
+      font-size: 1em;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>User Directory</h1>
+
+  <div id="searchBox">
+    <input type="number" id="userIdInput" placeholder="Enter User ID" />
+    <button onclick="searchUser()">Search</button>
+  </div>
+
+  <ol id="users"></ol>
+
+  <div id="searchResult"></div>
+
+  <script>
+    // Display all users initially
+    fetch("http://localhost:3001/api/users")
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('users');
+        data.forEach(user => {
+          container.innerHTML += `
+            <li class='user'>
+              <h3>${user.name}</h3>
+              <p>ID: ${user.id}</p>
+              <p>Division: ${user.div}</p>
+              <p>Address: ${user.address}</p>
+            </li>
+          `;
+        });
+      })
+      .catch(error => {
+        console.error('Error fetching users:', error);
+      });
+
+    // Search by user ID
+    function searchUser() {
+  const id = document.getElementById('userIdInput').value.trim();
+  const resultContainer = document.getElementById('searchResult');
+  resultContainer.innerHTML = ""; // Clear previous result
+
+  if (!id) {
+    resultContainer.innerHTML = `<p style="color:red;text-align:center;">Please enter a valid ID</p>`;
+    return;
+  }
+
+  fetch(`http://localhost:3001/api/users/${id}`)
+    .then(res => {
+      if (!res.ok) {
+        throw new Error("User not found");
+      }
+      return res.json();
+    })
+    .then(user => {
+      resultContainer.innerHTML = `
+        <div class='user'>
+          <h3>${user.name}</h3>
+          <p>ID: ${user.id}</p>
+          <p>Division: ${user.div}</p>
+          <p>Address: ${user.address}</p>
+        </div>
+      `;
+    })
+    .catch(err => {
+      resultContainer.innerHTML = `<p style="color:red;text-align:center;">${err.message}</p>`;
+    });
+}
+
+  </script>
+  </body>
+  </html>

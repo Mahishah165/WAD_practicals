@@ -1,0 +1,66 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+.facebook-blue{
+    color: white;
+}
+.navbar{
+    background-color: rgb(44, 26, 155);
+    height:42 px;
+}
+.navbar .form-control {
+    height: 28px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.navbar .btn {
+    height: 28px;
+    font-size: 12px;
+    border-radius: 3px;
+    line-height: 14px;
+}
+.signup-form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.signup-form .btn-signup {
+    background-color: #1b74e4;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    height: 48px;
+ 
+}
+.signup-form .btn-signup:hover{
+    background-color: blue;
+}
+.signup-form .create-page {
+    color: #1b74e4;
+    font-size: 14px;
+    text-decoration: none;
+}
+.signup-form .create-page:hover {
+    text-decoration: underline;
+}
+.terms-text {
+    color: #777;
+    font-size: 11px;
+}
+.terms-text a {
+    color: #777;
+    text-decoration: none;
+}
+.terms-text a:hover {
+    text-decoration: underline;
+}
+.image-placeholder{
+    background-color: antiquewhite;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
