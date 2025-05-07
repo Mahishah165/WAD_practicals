@@ -8,5 +8,5 @@ const songSchema = new mongoose.Schema({
     Actor: String,
     Actress: String
 });
-
+//collection name,schema
 module.exports = mongoose.model('Song', songSchema);

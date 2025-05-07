@@ -1,6 +1,38 @@
 const mongoose = require('mongoose');
 const Emp = require('../Models/Employee.js');
 
+// // <form id="empForm">
+//   <input name="name" placeholder="Name"><br>
+//   <input name="dept" placeholder="Department"><br>
+//   <input name="desg" placeholder="Designation"><br>
+//   <input name="salary" placeholder="Salary" type="number"><br>
+//   <input name="joining_date" placeholder="Joining Date" type="date"><br>
+//   <button type="submit">Submit</button>
+// </form>
+
+// <script>
+//   document.getElementById("empForm").addEventListener("submit", async (e) => {
+//     e.preventDefault();
+//     const form = e.target;
+
+//     const data = {
+//       name: form.name.value,
+//       dept: form.dept.value,
+//       desg: form.desg.value,
+//       salary: Number(form.salary.value),
+//       joining_date: form.joining_date.value
+//     };
+
+//     const res = await fetch("http://localhost:3000/add-employee", {
+//       method: "POST",
+//       headers: { "Content-Type": "application/json" },
+//       body: JSON.stringify(data)
+//     });
+
+//     const result = await res.json();
+//     alert(result.Message || result.message);
+//   });
+// </script>
 const addEmp = async(req,res)=>{
     try {
         const {name,dept,desg,salary,joining_date} = req.body;
